@@ -41,7 +41,7 @@ public class GestorProductos implements IGestorProductos {
             return validarDatos(codigo, descripcion, precio, categoria, estado);
         }
 
-        Producto nuevoProducto = new Producto(codigo, descripcion, precio, categoria, estado);
+        Producto nuevoProducto = new Producto(codigo, descripcion, categoria, estado, precio);
 
         // Verifica si el producto ya existe en la lista
         if (!productos.contains(nuevoProducto)) {
@@ -251,7 +251,7 @@ public class GestorProductos implements IGestorProductos {
 
                 float precio = Float.parseFloat(datos[4]); // Extrae el precio
 
-                Producto producto = new Producto(codigo, descripcion, precio, categoria, estado);
+                Producto producto = new Producto( codigo, descripcion, categoria, estado, precio);
                 productos.add(producto); // Añade el producto a la lista
             }
             System.out.println(LECTURA_OK); // Mensaje de éxito al finalizar la lectura

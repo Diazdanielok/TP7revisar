@@ -31,30 +31,28 @@ public abstract class Usuario implements Comparable<Usuario>{
 //        this.claverepetida = claverepetida;
 //        this.perfil= perfil;
 //    }
- private String correo;
+    private String correo;
     private String clave;
     private String nombre;
     private String apellido;
-    private Perfil perfil;
-    private String claverepetida;
+   
     private List<Pedido>listaPedidos = new ArrayList<>();
 
-    public Usuario(String correo, String apellido, String nombre, Perfil perfil, String clave, String claverepetida) {
+    public Usuario(String correo, String apellido, String nombre, String clave) {
         this.correo = correo;
         this.clave = clave;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.claverepetida = claverepetida;
-        this.perfil= perfil;
+        
     }
 
-    public String verClaverepetida() {
-        return claverepetida;
-    }
-
-    public void asignarClaverepetida(String claverepetida) {
-        this.claverepetida = claverepetida;
-    }
+//    public String verClaverepetida() {
+//        return claverepetida;
+//    }
+//
+//    public void asignarClaverepetida(String claverepetida) {
+//        this.claverepetida = claverepetida;
+//    }
 
     
     

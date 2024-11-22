@@ -14,8 +14,8 @@ import pedidos.modelos.Pedido;
 necesarias.*/
 public class Empleado extends Usuario {
 
-  public Empleado(String correo, String apellido, String nombre, Perfil perfil, String clave, String claveRepetida){
-        super(correo,  apellido,  nombre, perfil,  clave, claveRepetida);
+  public Empleado(String correo, String apellido, String nombre, String clave){
+         super(correo,  apellido,  nombre, clave);
     }
 
     @Override

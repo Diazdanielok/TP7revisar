@@ -17,13 +17,14 @@ public class Producto implements Comparable<Producto>{
     
     }
 
-    public Producto(int codigo, String descripcion, float precio, Categoria categoria, Estado estado) {
+    public Producto(int codigo, String descripcion, Categoria categoria, Estado estado, float precio) {
         this.codigo = codigo;
         this.descripcion = descripcion;
         this.precio = precio;
         this.estado = estado;
         this.categoria = categoria;
     }
+
 
     public int verCodigo() {
         return codigo;

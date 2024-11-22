@@ -11,8 +11,8 @@ import pedidos.modelos.GestorPedidos;
 necesarias.*/
 public class Encargado extends Usuario {
 
-      public Encargado(String correo, String apellido, String nombre, Perfil perfil, String clave, String claveRepetida){
-        super(correo,  apellido,  nombre, perfil,  clave, claveRepetida);
+      public Encargado(String correo, String apellido, String nombre, String clave){
+         super(correo,  apellido,  nombre, clave);
     }
     @Override
     public void mostrar() {

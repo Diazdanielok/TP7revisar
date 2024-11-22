@@ -64,13 +64,13 @@ public class GestorUsuarios implements IGestorUsuarios{
         Usuario nuevoUsuario;
         switch (perfil) {
             case CLIENTE:
-                nuevoUsuario = new Cliente(correo,  apellido,  nombre, perfil,  clave, claveRepetida);
+                nuevoUsuario = new Cliente(correo,  apellido,  nombre, clave);
                 break;
             case EMPLEADO:
-                nuevoUsuario = new Empleado(correo,  apellido,  nombre, perfil,  clave, claveRepetida);
+                nuevoUsuario = new Empleado(correo,  apellido,  nombre, clave);
                 break;
             case ENCARGADO:
-                nuevoUsuario = new Encargado(correo,  apellido,  nombre, perfil,  clave, claveRepetida);
+                nuevoUsuario = new Encargado(correo,  apellido,  nombre, clave);
                 break;
             default:
                 return "Perfil no válido"; // Manejo de errores en caso de un perfil no válido
@@ -79,7 +79,6 @@ public class GestorUsuarios implements IGestorUsuarios{
         listausuarios.add(nuevoUsuario);
         return EXITO;
     }
-    
     private String validarUsuario(String correo, String clave, String apellido, String nombre, String claverepetida, Perfil perfil) {
         if (correo == null || !correo.contains("@")) {
             return ERROR_CORREO;

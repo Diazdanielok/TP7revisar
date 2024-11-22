@@ -11,8 +11,8 @@ import pedidos.modelos.Pedido;
 necesarias. Como se ve son visibles las modificaciones en el*/
 public class Cliente extends Usuario {
 List <Pedido> listaPedidos = new ArrayList<>();
-     public Cliente(String correo, String apellido, String nombre, Perfil perfil, String clave, String claveRepetida){
-         super(correo,  apellido,  nombre, perfil,  clave, claveRepetida);
+      public Cliente(String correo, String apellido, String nombre, String clave){
+         super(correo,  apellido,  nombre, clave);
     }
 
 
