@@ -13,7 +13,7 @@ import usuarios.modelos.Cliente;
 
 /**
  *
- * @author estudiante
+ * @author Fabri
  */
 public class Pedido {
 
